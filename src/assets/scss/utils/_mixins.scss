@@ -13,8 +13,7 @@
 }
 
 @mixin flex-row-center-center {
-  @include flex-row;
-  justify-content: center;
+  @include flex-row-center;
   align-items: center;
 }
 
@@ -54,4 +53,9 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@mixin nav-sliding-time {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }

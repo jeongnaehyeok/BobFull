@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Navbar from '@pages/Navbar';
@@ -9,9 +9,13 @@ import Basket from '@pages/Basket';
 import '@scss/App.scss';
 
 const App = () => {
+  const [isActive, setIsActive] = useState(false);
+  const navToggle = state => {
+    setIsActive(state);
+  };
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar isActive={isActive} hook={navToggle} />
       <main>
         <Switch>
           <Route path="/" exact component={Home} />

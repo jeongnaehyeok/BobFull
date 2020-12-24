@@ -1,7 +1,17 @@
 @import 'utils/variables.scss';
+@import 'utils/mixins.scss';
 
 html {
   font-size: 62.5%;
+}
+header {
+  @include flex-column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 }
 h1,
 h2 {
