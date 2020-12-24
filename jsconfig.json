@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@images/*": ["./src/assets/images"],
+      "@scss/*": ["./src/assets/scss"],
+      "@commons/*": ["./src/components/commons"],
+      "@elements/*": ["./src/assets/elements"],
+      "@layouts/*": ["./src/assets/layouts"],
+      "@pages/*": ["./src/assets/pages"],
+      "@modules/*": ["./src/modules"],
+      "@utills/*": ["./src/utills"]
+    }
+  }
+}

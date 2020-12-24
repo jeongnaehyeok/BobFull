@@ -1,0 +1,50 @@
+// ****************
+// Color
+// ****************
+
+// theme
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-red-1: #e63127;
+$color-red-2: #ea5047;
+
+$color-orange: #ffc35e;
+
+// ****************
+// Font Size
+// ****************
+
+$font-size-base: 1rem; // 10px
+$font-size-1: $font-size-base * 2; // 20px
+$font-size-2: $font-size-base * 1.8; // 18px
+$font-size-3: $font-size-base * 16; // 16px
+$font-size-4: $font-size-base * 1.4; // 14px
+$font-size-5: $font-size-base * 1.2; // 12px
+
+$h1-font-size: $font-size-base * 4; // 40px
+$h2-font-size: $font-size-base * 3.6; // 36px
+$h3-font-size: $font-size-base * 3; // 30px
+$h4-font-size: $font-size-base * 2.6; // 26px
+$h5-font-size: $font-size-base * 1.8; // 18px
+
+// ****************
+// Font Weight
+// ****************
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+// ****************
+// Font Stack
+// ****************
+$font-stack-ko: 'Noto Sans CJK KR', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-stack-en: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
