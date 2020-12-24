@@ -14,17 +14,19 @@ const App = () => {
     setIsActive(state);
   };
   return (
-    <BrowserRouter>
-      <Navbar isActive={isActive} hook={navToggle} />
-      <main>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/menu/:kind" exact component={Menu} />
-          <Route path="/basket" exact component={Basket} />
-          <Redirect path="*" to="/" />
-        </Switch>
-      </main>
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <Navbar isActive={isActive} hook={navToggle} />
+        <main>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/menu/:kind" exact component={Menu} />
+            <Route path="/basket" exact component={Basket} />
+            <Redirect path="*" to="/" />
+          </Switch>
+        </main>
+      </BrowserRouter>
+    </div>
   );
 };
 

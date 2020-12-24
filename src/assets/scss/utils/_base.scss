@@ -3,6 +3,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: $color-background;
 }
 header {
   @include flex-column;
@@ -12,6 +13,26 @@ header {
   right: 0;
   width: 100%;
   z-index: 1000;
+}
+main {
+  @include space-clear;
+  @include nav-sliding-time;
+  @include flex-column-center;
+  margin-top: 6.2rem;
+  padding: 0 1.6rem;
+  max-width: 768px;
+  background-color: white;
+  min-height: calc(100vh - 6.2rem);
+  &.active {
+    -webkit-transform: translateX(-20rem);
+    -ms-transform: translateX(-20rem);
+    transform: translateX(-20rem);
+  }
+  &.deactive {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 h1,
 h2 {

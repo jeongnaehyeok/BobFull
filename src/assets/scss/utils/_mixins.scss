@@ -32,6 +32,18 @@
   justify-content: center;
 }
 
+@mixin page-layout {
+  @include flex-column;
+  padding-top: 1.5rem;
+  width: 100%;
+  min-height: calc(100vh - 6.2rem);
+}
+
+@mixin page-center-layout {
+  @include page-layout;
+  justify-content: center;
+}
+
 // ****************
 // SpaceType
 // ****************

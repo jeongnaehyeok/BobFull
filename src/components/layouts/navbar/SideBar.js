@@ -23,6 +23,9 @@ const SideBar = ({ isActive }) => {
           <Link className="link__item" to="/menu/noodle">
             면
           </Link>
+          <Link className="link__item" to="/basket">
+            장바구니
+          </Link>
         </div>
       </div>
       <div className="sidebar__bottom--items">
