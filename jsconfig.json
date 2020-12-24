@@ -10,7 +10,7 @@
       "@layouts/*": ["./src/components/layouts/*"],
       "@pages/*": ["./src/components/pages/*"],
       "@modules/*": ["./src/modules/*"],
-      "@utills/*": ["./src/utills/*"]
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }

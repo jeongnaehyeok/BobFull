@@ -12,6 +12,8 @@ module.exports = {
   ],
   rules: {
     'import/no-unresolved': 'off',
+    'react/button-has-type': 'off',
+    'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       'error',
       {
