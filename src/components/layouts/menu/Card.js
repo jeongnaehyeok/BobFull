@@ -3,16 +3,16 @@ import classNames from 'classnames';
 import Counter from '@commons/Counter';
 import '@scss/layouts/menu/Card.scss';
 
-const Card = ({ initialPrice, menuName }) => {
+const Card = ({ id, initialPrice, menuName, onClick }) => {
   const [price, setPrice] = useState(initialPrice);
   const [number, setNumber] = useState(0);
-  const onChange = _number => {
+  const onChangeCounter = _number => {
     setNumber(_number);
     if (_number === 0) return;
     setPrice(initialPrice * _number);
   };
-  const onClick = () => {
-    console.log('test');
+  const onAddCart = () => {
+    onClick(id, number);
   };
   return (
     <div className="card">
@@ -25,10 +25,10 @@ const Card = ({ initialPrice, menuName }) => {
               ₩ {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
             </p>
           </div>
-          <Counter onChange={onChange} initialNumber={number} />
+          <Counter onChange={onChangeCounter} initialNumber={number} />
         </span>
         <button
-          onClick={onClick}
+          onClick={onAddCart}
           className={classNames(
             'iteminfo--addcard',
             number ? 'active' : 'deactive',
@@ -43,6 +43,7 @@ const Card = ({ initialPrice, menuName }) => {
 };
 
 Card.defaultProps = {
+  id: 1,
   menuName: '오리지널 밥풀',
   initialPrice: 4000,
 };

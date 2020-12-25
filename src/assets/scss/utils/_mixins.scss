@@ -1,6 +1,36 @@
 @import 'utils/variables.scss';
 
 // ****************
+// Media Query
+// ****************
+
+$breakpoints: (
+  'max-xsmall': (
+    max-width: 375px,
+  ),
+  'max-small': (
+    max-width: 425px,
+  ),
+  'max-medium': (
+    max-width: 568px,
+  ),
+  'max-large': (
+    max-width: 768px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// ****************
 // LayOut
 // ****************
 @mixin flex-row {
