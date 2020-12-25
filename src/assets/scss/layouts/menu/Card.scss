@@ -39,13 +39,20 @@
         color: $color-black;
       }
     }
-    &--addCard {
+    &--addcard {
       padding: 0.5rem;
       border: 0.05rem solid $color-gray-8;
       border-radius: 0.5rem;
       background-color: $color-gray-8;
       font-size: $font-size-3;
       font-weight: $font-weight-medium;
+      &.active {
+        color: $color-black;
+      }
+      &.deactive {
+        color: $color-gray-4;
+        cursor: not-allowed;
+      }
     }
   }
 }

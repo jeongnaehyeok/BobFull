@@ -11,6 +11,9 @@ const Card = ({ initialPrice, menuName }) => {
     if (_number === 0) return;
     setPrice(initialPrice * _number);
   };
+  const onClick = () => {
+    console.log('test');
+  };
   return (
     <div className="card">
       <img src="https://place-hold.it/768x576" alt="여백의미" />
@@ -25,10 +28,12 @@ const Card = ({ initialPrice, menuName }) => {
           <Counter onChange={onChange} initialNumber={number} />
         </span>
         <button
+          onClick={onClick}
           className={classNames(
-            'iteminfo--addCard',
+            'iteminfo--addcard',
             number ? 'active' : 'deactive',
           )}
+          disabled={!number}
         >
           담기
         </button>

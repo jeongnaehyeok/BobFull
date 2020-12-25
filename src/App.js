@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Navbar from '@pages/Navbar';
@@ -17,7 +18,7 @@ const App = () => {
     <div className="app">
       <BrowserRouter>
         <Navbar isActive={isActive} hook={navToggle} />
-        <main>
+        <main className={isActive ? 'active' : 'deactive'}>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/menu/:kind" exact component={Menu} />
@@ -25,6 +26,9 @@ const App = () => {
             <Redirect path="*" to="/" />
           </Switch>
         </main>
+        <div
+          className={classNames('overlap', isActive ? 'active' : 'deactive')}
+        />
       </BrowserRouter>
     </div>
   );

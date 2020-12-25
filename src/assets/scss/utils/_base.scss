@@ -63,3 +63,21 @@ a {
     color: inherit;
   }
 }
+button {
+  @include space-clear;
+  display: inline-block;
+  width: 100%;
+  background-image: initial;
+  background-image: none;
+  background-color: initial;
+  background-color: $color-white;
+  background-repeat: initial;
+  background-repeat: no-repeat;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-3;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+  outline: none;
+  cursor: pointer;
+}
