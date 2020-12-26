@@ -1,0 +1,37 @@
+[
+  {
+    "name": "해물 볶음게티",
+    "src": "/images/noodle/seafood_fried_ghetti.jpg",
+    "price": 4500
+  },
+  {
+    "name": "불 볶음게티",
+    "src": "/images/noodle/spicy_fried_ghetti.jpg",
+    "price": 4500
+  },
+  {
+    "name": "고기 우동",
+    "src": "/images/noodle/pork_udon.jpg",
+    "price": 5000
+  },
+  {
+    "name": "불 고기 우동",
+    "src": "/images/noodle/spicy_pork_udon.jpg",
+    "price": 5000
+  },
+  {
+    "name": "치킨 카레 우동",
+    "src": "/images/noodle/chiken_curry_udon.jpg",
+    "price": 5500
+  },
+  {
+    "name": "크림 우동",
+    "src": "/images/noodle/cream_udon.jpg",
+    "price": 5500
+  },
+  {
+    "name": "냉우동",
+    "src": "/images/noodle/cold_udon.jpg",
+    "price": 5500
+  }
+]

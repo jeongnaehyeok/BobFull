@@ -1,6 +1,6 @@
 import React from 'react';
 import Total from '@elements/basket/Total';
-import BarCard from '@layouts/basket/BarCard';
+// import BarCard from '@layouts/basket/BarCard';
 import ToppingContainer from '@layouts/basket/ToppingContainer';
 import '@scss/pages/Basket.scss';
 
@@ -11,7 +11,7 @@ const Basket = () => {
   return (
     <div className="basket">
       <div className="basket__container">
-        <BarCard />
+        {/* <BarCard /> */}
         <div className="basket__container--bottom">
           <ToppingContainer />
           <Total price={price} number={number} />

@@ -9,6 +9,9 @@ const Home = () => {
     <div className="home">
       <img className="logo" src={Logo} alt="Logo" />
       <img className="sublogo" src={SubLogo} alt="SubLogo" />
+      <Link className="link__item" to="/menu/all">
+        All
+      </Link>
       <Link className="link__item" to="/menu/friedrice">
         볶음밥
       </Link>

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Counter from '@commons/Counter';
 import '@scss/layouts/menu/Card.scss';
 
-const Card = ({ id, initialPrice, menuName, onClick }) => {
+const Card = ({ id, initialPrice, menuName, image, onClick }) => {
   const [price, setPrice] = useState(initialPrice);
   const [number, setNumber] = useState(0);
   const onChangeCounter = _number => {
@@ -16,7 +16,7 @@ const Card = ({ id, initialPrice, menuName, onClick }) => {
   };
   return (
     <div className="card">
-      <img src="https://place-hold.it/768x576" alt="여백의미" />
+      <img src={image} alt={id} />
       <div className="card__box">
         <p className="title">{menuName}</p>
         <span className="iteminfo">
@@ -46,6 +46,7 @@ Card.defaultProps = {
   id: 1,
   menuName: '오리지널 밥풀',
   initialPrice: 4000,
+  image: 'https://place-hold.it/768x576',
 };
 
 export default Card;

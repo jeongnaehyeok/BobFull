@@ -1,0 +1,32 @@
+[
+  {
+    "name": "등심 스테이크",
+    "src": "/images/steak/beef_sirloin_steak.jpg",
+    "price": 9900
+  },
+  {
+    "name": "목살 스테이크",
+    "src": "/images/steak/beef_sirloin_steak.jpg",
+    "price": 8900
+  },
+  {
+    "name": "함박 스테이크",
+    "src": "/images/steak/beef_sirloin_steak.jpg",
+    "price": 7900
+  },
+  {
+    "name": "큐브 덮밥",
+    "src": "/images/steak/cube_beef_ricebowl.jpg",
+    "price": 9000
+  },
+  {
+    "name": "목살 덮밥",
+    "src": "/images/steak/cube_pork_ricebowl.jpg",
+    "price": 8000
+  },
+  {
+    "name": "함박 덮밥",
+    "src": "/images/steak/hamburg_ricebowl.jpg",
+    "price": 7000
+  }
+]

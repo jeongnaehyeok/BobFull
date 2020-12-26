@@ -1,0 +1,32 @@
+[
+  {
+    "name": "삼겹살 데리야끼",
+    "src": "/images/ricebowl/samgyeopsal_teriyaki.jpg",
+    "price": 5000
+  },
+  {
+    "name": "참치 데리야끼",
+    "src": "/images/ricebowl/tuna_teriyaki.jpg",
+    "price": 5000
+  },
+  {
+    "name": "치킨 데리야끼",
+    "src": "/images/ricebowl/chiken_teriyaki.jpg",
+    "price": 5000
+  },
+  {
+    "name": "치킨 커리",
+    "src": "/images/ricebowl/chiken_curry.jpg",
+    "price": 5500
+  },
+  {
+    "name": "직화 불고기 덮밥",
+    "src": "/images/ricebowl/bulgogi_ricebowl.jpg",
+    "price": 5000
+  },
+  {
+    "name": "스페셜 데리야끼",
+    "src": "/images/ricebowl/special_teriyaki.jpg",
+    "price": 6500
+  }
+]
