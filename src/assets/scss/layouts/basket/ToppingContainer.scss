@@ -1,0 +1,16 @@
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+
+.toppingcontainer {
+  margin: 1rem 0;
+  width: 100%;
+  &--title {
+    margin-top: 1rem 0;
+    font-size: $h3-font-size;
+    font-weight: $font-weight-bold;
+  }
+  &--box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

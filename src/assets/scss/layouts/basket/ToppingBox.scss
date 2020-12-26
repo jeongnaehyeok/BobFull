@@ -1,0 +1,27 @@
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+
+.toppingbox {
+  @include flex-column-center;
+  width: 25%;
+  margin-top: 2rem;
+  @include respond-to('max-small') {
+    width: 33.33%;
+  }
+  &--img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    margin-bottom: 0.5rem;
+    font-size: $font-size-1;
+    color: $color-gray-4;
+    &.active {
+      color: $color-black;
+    }
+  }
+}

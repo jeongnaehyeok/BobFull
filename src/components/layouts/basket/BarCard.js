@@ -16,7 +16,7 @@ const BarCard = ({ id, originalPrice, initialNumber, onChnage }) => {
         <img src="https://place-hold.it/768x900" alt="여백의미" />
       </div>
       <div className="info">
-        <p className="info--title">Cube Pork Steak with Rice</p>
+        <p className="info--title">한국대표 밥풀</p>
         <div className="info--calc">
           <p>₩ {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</p>
           <Counter onChange={onChangeCounter} initialNumber={initialNumber} />
