@@ -1,0 +1,42 @@
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+.barcard {
+  display: inline-flex;
+  padding: 1rem 0;
+  border-bottom: 1px dashed $color-black;
+  width: 100%;
+  &--img {
+    @include flex-column-center-center;
+    width: 30%;
+    max-height: 16rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .info {
+    @include flex-column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 70%;
+    &--title {
+      margin-bottom: 1rem;
+      font-size: $h3-font-size;
+      font-weight: $font-weight-bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &--calc {
+      text-align: right;
+      p {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: $h4-font-size;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

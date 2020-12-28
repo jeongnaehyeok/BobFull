@@ -1,7 +1,40 @@
 @import 'utils/variables.scss';
+@import 'utils/mixins.scss';
 
 html {
   font-size: 62.5%;
+  background-color: $color-background;
+  @include respond-to('max-small') {
+    font-size: 50%;
+  }
+}
+header {
+  @include flex-column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+main {
+  @include space-clear;
+  @include nav-sliding-time;
+  @include flex-column-center;
+  margin-top: 6.2rem;
+  padding: 0 1.6rem;
+  max-width: 768px;
+  min-height: calc(100vh - 6.2rem);
+  &.active {
+    -webkit-transform: translateX(-20rem);
+    -ms-transform: translateX(-20rem);
+    transform: translateX(-20rem);
+  }
+  &.deactive {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 h1,
 h2 {
@@ -32,4 +65,23 @@ a {
     text-decoration: none;
     color: inherit;
   }
+}
+button {
+  @include space-clear;
+  display: inline-block;
+  width: 100%;
+  background-image: initial;
+  background-image: none;
+  background-color: initial;
+  background-color: $color-white;
+  background-repeat: initial;
+  background-repeat: no-repeat;
+  font-family: $font-statk-defalt;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-3;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+  outline: none;
+  cursor: pointer;
 }

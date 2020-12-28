@@ -1,0 +1,26 @@
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+.home {
+  @include page-center-layout;
+  align-items: center;
+  .logo {
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+  .sublogo {
+    margin-bottom: 2rem;
+    width: 30rem;
+  }
+  a {
+    margin-bottom: 2rem;
+    font-family: $font-statk-defalt;
+    font-size: $h4-font-size;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    &:hover {
+      color: $color-white;
+      opacity: 0.5;
+    }
+  }
+}

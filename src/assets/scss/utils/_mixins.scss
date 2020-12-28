@@ -1,6 +1,36 @@
 @import 'utils/variables.scss';
 
 // ****************
+// Media Query
+// ****************
+
+$breakpoints: (
+  'max-xsmall': (
+    max-width: 375px,
+  ),
+  'max-small': (
+    max-width: 425px,
+  ),
+  'max-medium': (
+    max-width: 568px,
+  ),
+  'max-large': (
+    max-width: 768px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// ****************
 // LayOut
 // ****************
 @mixin flex-row {
@@ -13,8 +43,7 @@
 }
 
 @mixin flex-row-center-center {
-  @include flex-row;
-  justify-content: center;
+  @include flex-row-center;
   align-items: center;
 }
 
@@ -30,6 +59,18 @@
 
 @mixin flex-column-center-center {
   @include flex-column-center;
+  justify-content: center;
+}
+
+@mixin page-layout {
+  @include flex-column;
+  padding-top: 1.5rem;
+  width: 100%;
+  min-height: calc(100vh - 6.2rem);
+}
+
+@mixin page-center-layout {
+  @include page-layout;
   justify-content: center;
 }
 
@@ -54,4 +95,9 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@mixin nav-sliding-time {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }

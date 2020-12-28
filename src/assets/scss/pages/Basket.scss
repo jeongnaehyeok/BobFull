@@ -1,0 +1,18 @@
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+.basket {
+  @include page-center-layout;
+  padding-bottom: 1.5rem;
+  &__container {
+    @include flex-column-center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: $color-white;
+    &--bottom {
+      width: 100%;
+    }
+  }
+}

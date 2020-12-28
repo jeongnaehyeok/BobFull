@@ -1,0 +1,26 @@
+[
+  {
+    "name": "계란",
+    "src": "/images/topping/Egg.png",
+    "price": 500,
+    "number": 0
+  },
+  {
+    "name": "체다치즈",
+    "src": "/images/topping/Cheddar.png",
+    "price": 500,
+    "number": 0
+  },
+  {
+    "name": "모짜치즈",
+    "src": "/images/topping/Mozzarella.png",
+    "price": 1000,
+    "number": 0
+  },
+  {
+    "name": "음료수",
+    "src": "/images/topping/Drink.png",
+    "price": 1500,
+    "number": 0
+  }
+]

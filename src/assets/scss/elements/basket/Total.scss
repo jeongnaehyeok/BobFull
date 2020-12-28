@@ -1,0 +1,22 @@
+@import 'utils/variables.scss';
+.total {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem 1rem;
+  border-top: 1px dashed $color-black;
+  width: 100%;
+  font-size: $font-size-1;
+  &--message {
+    color: $color-red-1;
+  }
+  &--calc {
+    display: flex;
+    p {
+      margin-right: 1rem;
+      &:last-of-type {
+        margin-right: 0rem;
+      }
+    }
+  }
+}

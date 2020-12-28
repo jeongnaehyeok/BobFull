@@ -1,0 +1,59 @@
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+.card {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: $color-white;
+  img {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  &__box {
+    @include flex-column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    min-height: 10rem;
+    .title {
+      font-family: $font-statk-defalt;
+      font-size: $h3-font-size;
+      font-weight: $font-weight-bold;
+    }
+  }
+  .iteminfo {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    &--price {
+      font-family: $font-stack-en;
+      font-size: $font-size-1;
+      font-weight: $font-weight-medium;
+      color: $color-gray-4;
+      .active {
+        color: $color-black;
+      }
+    }
+    &--addcard {
+      padding: 0.5rem;
+      border: 0.05rem solid $color-gray-8;
+      border-radius: 0.5rem;
+      background-color: $color-gray-8;
+      font-size: $font-size-3;
+      font-weight: $font-weight-medium;
+      &.active {
+        color: $color-black;
+      }
+      &.deactive {
+        color: $color-gray-4;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
