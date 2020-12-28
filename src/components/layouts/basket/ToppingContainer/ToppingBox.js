@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import Counter from '@commons/Counter';
 import '@scss/layouts/basket/ToppingBox.scss';
 
-const ToppingBox = ({ name, image, originPrice, onChange }) => {
-  const [price, setPrice] = useState(0);
-  const [number, setNumber] = useState(0);
+const ToppingBox = ({ name, image, number, originPrice, onChange }) => {
+  const [price, setPrice] = useState(originPrice * number);
   const onChangeCounter = _number => {
-    onChange(_number);
+    onChange(name, _number);
     setPrice(originPrice * _number);
-    setNumber(_number);
   };
   return (
     <div className="toppingbox">
@@ -23,7 +21,7 @@ const ToppingBox = ({ name, image, originPrice, onChange }) => {
       <p className={number ? 'active' : 'deactive'}>
         ₩ {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
       </p>
-      <Counter onChange={onChangeCounter} />
+      <Counter initialNumber={number} onChange={onChangeCounter} />
     </div>
   );
 };
