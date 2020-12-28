@@ -5,9 +5,19 @@
     "price": 4500
   },
   {
+    "name": "오리지널 밥풀 특",
+    "src": "/images/friedrice/original_babfull.jpg",
+    "price": 5500
+  },
+  {
     "name": "불 밥풀",
     "src": "/images/friedrice/spicy_babfull.jpg",
     "price": 5000
+  },
+  {
+    "name": "불 밥풀 특",
+    "src": "/images/friedrice/spicy_babfull.jpg",
+    "price": 6000
   },
   {
     "name": "한국대표 밥풀",
@@ -15,9 +25,19 @@
     "price": 5000
   },
   {
+    "name": "한국대표 밥풀 특",
+    "src": "/images/friedrice/koreanstyle_babfull.jpg",
+    "price": 6000
+  },
+  {
     "name": "불 삼겹 밥풀",
     "src": "/images/friedrice/spicy_samgyeopsal_babfull.jpg",
-    "price": 5500
+    "price": 6500
+  },
+  {
+    "name": "불 삼겹 밥풀 특",
+    "src": "/images/friedrice/spicy_samgyeopsal_babfull.jpg",
+    "price": 6500
   },
   {
     "name": "불 참치 밥풀",
@@ -25,9 +45,19 @@
     "price": 5500
   },
   {
+    "name": "불 참치 밥풀 특",
+    "src": "/images/friedrice/spicy_tuna_babfull.jpg",
+    "price": 6500
+  },
+  {
     "name": "불 닭 밥풀",
     "src": "/images/friedrice/spicy_chicken_babfull.jpg",
     "price": 5500
+  },
+  {
+    "name": "불 닭 밥풀 특",
+    "src": "/images/friedrice/spicy_chicken_babfull.jpg",
+    "price": 6500
   },
   {
     "name": "불 치즈 밥풀",
@@ -35,8 +65,18 @@
     "price": 6000
   },
   {
+    "name": "불 치즈 밥풀 특",
+    "src": "/images/friedrice/spicy_cheese_babfull.jpg",
+    "price": 7000
+  },
+  {
     "name": "스페셜 밥풀",
     "src": "/images/friedrice/special_babfull.jpg",
     "price": 6500
+  },
+  {
+    "name": "스페셜 밥풀 특",
+    "src": "/images/friedrice/special_babfull.jpg",
+    "price": 7500
   }
 ]
