@@ -3,6 +3,7 @@
 
 .basket {
   @include page-center-layout;
+  padding-bottom: 1.5rem;
   &__container {
     @include flex-column-center;
     justify-content: space-between;

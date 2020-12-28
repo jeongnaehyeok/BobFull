@@ -6,9 +6,12 @@ const Total = ({ number, price }) => {
   const totalNumber = number;
   return (
     <div className="total">
-      <p>총</p>
-      <p>{totalNumber} 개</p>
-      <p>₩ {totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</p>
+      <p className="total--message">카운터에 보여주세요!!</p>
+      <div className="total--calc">
+        <p>총</p>
+        <p>{totalNumber} 개</p>
+        <p>₩ {totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</p>
+      </div>
     </div>
   );
 };
